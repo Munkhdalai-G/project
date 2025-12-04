@@ -19,29 +19,6 @@
   display: none;
 }
 
-/* .navihide {
-  display: flex;
-  gap: 24px;
-} */
-
-/* @media (min-width: 1024px) {
-  .hide {
-    display: block;
-  }
-  .navihide {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    justify-content: center;
-    align-items: center;
-  }
-  .space {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-  }
-} */
 .after2 {
   display: flex;
   height: 73px;
@@ -51,53 +28,7 @@
   align-self: stretch;
   text-align: center;
 }
-/* .photo {
-  width: 100%;
-  height: 500px;
-  display: none;
-} */
-/* .photo2 {
-  display: none;
-  width: 100%;
-  height: 650px;
-  flex-shrink: 0;
-}
-.photo3 {
-  display: none;
-  width: 100%;
-  height: 692px;
-  flex-shrink: 0;
-}
-@media (min-width: 390px) {
-  .photo {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  .photo {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .photo2 {
-    display: block;
-  }
-}
-@media (min-width: 1024px) {
-  .photo2 {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  .photo3 {
-    display: block;
-  }
-}
-.photo {
-  background-image: url(app.jpg);
-  width: 100%;
-  height: 500px;
-} */
+
 .first1 {
   background-image: url(app.jpg);
   background-size: cover;
@@ -108,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  margin-top: 12px;
+  margin-top: px;
 }
 .pro {
   display: flex;
@@ -161,6 +92,11 @@
   background-color: rgba(0, 113, 227, 1);
   color: white;
 }
+.bgcolor {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
 .but2 {
   display: flex;
   padding: 8px 20px;
@@ -173,22 +109,23 @@
   background-color: transparent;
   border: 1px solid rgba(0, 113, 227, 1);
 }
+.button-pro {
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  border-color: rgba(0, 113, 227, 1);
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
 .text {
   display: none;
 }
-/* @media (min-width: 390px) {
-  .text {
-    display: block;
-  }
-}
-@media (min-width: 600px) {
-  .first1 {
-    background-image: url(app2.jpg);
-  }
-  .pro {
-    padding-top: 58px;
-  }
-} */
+
 .hi {
   display: flex;
   width: 405px;
@@ -240,33 +177,7 @@
   align-items: center;
   gap: 10px;
 }
-/* .pro {
-  padding-top: 350px;
-} */
 
-/* @media (min-width: 768px) {
-  .first1 {
-    background-image: url(app3.jpg);
-  }
-  .first2 {
-    background-image: url(pi3.jpg);
-  }
-
-  .pi {
-    display: flex;
-    height: 32px;
-    flex-direction: column;
-    justify-content: center;
-    align-self: stretch;
-    color: #f5f5f7;
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
-  }
-} */
 .first2 {
   background-image: url(pi1.jpg);
   height: 500px;
@@ -275,27 +186,10 @@
   background-position: center;
   margin-top: 12px;
 }
-/* .ip16 {
-  padding-top: 36px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-} */
+
 .pad {
   padding-top: 20px;
 }
-/* @media (min-width: 600px) {
-  .first2 {
-    background-image: url(pi2.jpg);
-  }
-}
-@media (min-width: 768px) {
-  .first2 {
-    background-image: url(pi3.jpg);
-  }
-} */
 
 .first3 {
   margin-top: 12px;
@@ -308,10 +202,7 @@
   width: 100%;
   padding-top: 36px;
 }
-/* .bg-img {
-  width: 100%;
-  padding-top: 36px;
-} */
+
 .img1 {
   display: flex;
   justify-content: center;
@@ -389,6 +280,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 280px;
+  text-align: center;
 }
 .h1p {
   display: flex;
@@ -397,21 +289,18 @@
   justify-content: center;
   align-self: stretch;
   color: #000;
-  text-align: center;
   font-family: Inter;
   font-size: 52px;
   font-style: normal;
   font-weight: 600;
 }
 .pip {
-  padding-top: 12px;
   display: flex;
   height: 32px;
   flex-direction: column;
   justify-content: center;
   align-self: stretch;
   color: #000;
-  text-align: center;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -420,19 +309,13 @@
   padding-bottom: 16px;
 }
 .button {
-  padding-top: 16px;
-  display: flex;
-  padding: 12px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
   border-radius: 100px;
   width: 114px;
   height: 44px;
   background-color: rgba(0, 113, 227, 1);
   color: white;
 }
-.first4 {
+.bg-img0 {
   background-image: url(airpods\ 4.jpg);
   color: white;
   background-repeat: no-repeat;
@@ -445,6 +328,9 @@
   align-items: center;
   flex-direction: column;
   margin-top: 12px;
+}
+.null {
+  display: none;
 }
 .hipi {
   display: flex;
@@ -488,7 +374,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 56px;
+  padding-top: 301px;
   gap: 4px;
   align-self: stretch;
 }
@@ -591,7 +477,7 @@
   text-align: center;
 } */
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .text {
     display: block;
   }
@@ -621,6 +507,9 @@
   }
   .first1 {
     background-image: url(app2.jpg);
+  }
+  .bg-img0 {
+    display: none;
   }
   .pro {
     padding-top: 58px;
@@ -689,7 +578,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1048px) {
   .bg-img {
     background-image: url(air3.jpg);
     width: 100%;
@@ -698,22 +587,25 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .text {
+  .text9 {
     display: none;
   }
   .text {
     display: block;
   }
+  .null {
+    display: block;
+  }
+
   .first2 {
     background-image: url(pi3.jpg);
   }
   .first1 {
     background-image: url(app3.jpg);
   }
-  .first2 {
-    background-image: url(pi3.jpg);
+  .first3 {
+    background-image: url(air3.jpg);
   }
-
   .pi {
     display: flex;
     height: 32px;

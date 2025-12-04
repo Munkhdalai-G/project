@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-scissors-paper</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="middle">
+    <h1>Rock-scissors-paper</h1>
+
+    <div class="choices">
+      <button id="rock" onclick="turn('rock')">🪨</button>
+      <button id="scissors" onclick="turn('scissors')">✂️</button>
+      <button id="paper" onclick="turn('paper')">📄</button>
+    </div>
+    <div class="wrap">
+      <div>Score user</div>
+      <div>Score computer</div>
+    </div>
+    <div>Winner</div>
+    <button id="reset" onclick="resetGame()">play again!</button>
+
+    <script src="togloom.js"></script>
+  </body>
+</html>
