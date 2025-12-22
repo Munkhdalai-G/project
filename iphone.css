@@ -448,10 +448,13 @@
 }
 .hipi {
   display: flex;
+
   width: 241px;
   flex-direction: column;
   align-items: center;
-  padding-top: 220px;
+  padding-top: 299px;
+  padding-left: 75px;
+  padding-right: 74px;
 }
 .hi1 {
   width: 144px;
@@ -591,6 +594,17 @@
   text-align: center;
 } */
 
+.bottom-text {
+  padding-top: 301px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+.up-text {
+  padding-top: 63px;
+  padding-left: 53px;
+  padding-right: 52px;
+}
+
 @media (min-width: 600px) {
   .text {
     display: block;
@@ -627,31 +641,36 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 490px 490px 490px;
-    width: 744;
-    height: 1494;
+    width: 100%;
+    height: 1494px;
     gap: 12px;
+    margin-top: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto;
   }
   .grid1 {
     background-image: url(airpods4-2.jpg);
-    width: 300px;
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
   .grid2 {
     background-image: url(bg-img12.jpg);
-    width: 300px;
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
   .grid3 {
     background-image: url(bg-img22.jpg);
-    width: 300px;
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
@@ -659,7 +678,7 @@
   }
   .grid4 {
     background-image: url(bg-img32.png);
-    width: 300px;
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
@@ -667,7 +686,7 @@
   }
   .grid5 {
     background-image: url(bg-img42.jpg);
-    width: 300px;
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
@@ -675,7 +694,7 @@
   }
   .grid6 {
     background-image: url(bg-img52.jpg);
-    width: 300px;
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
@@ -686,6 +705,14 @@
 @media (min-width: 390px) {
   .text {
     display: block;
+  }
+  .button {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .grid {
+    display: none;
   }
 }
 
@@ -710,8 +737,17 @@
   .first1 {
     background-image: url(app3.jpg);
   }
-  .first2 {
-    background-image: url(pi3.jpg);
+  .first3 {
+    background-image: url(air3.jpg);
+  }
+  .gift-magic {
+    display: block;
+  }
+  .nnn {
+    display: none;
+  }
+  .button {
+    display: block;
   }
 
   .pi {
@@ -746,55 +782,61 @@
   }
   .grid {
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 490px 490px 490px;
-    width: 744;
+
+    width: 100%;
     height: 1494;
     gap: 12px;
+    margin-top: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto;
   }
   .grid1 {
-    background-image: url(grid1.jpg);
-    width: 300px;
+    background-image: url(airpods4-2.jpg);
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
   .grid2 {
-    background-image: url(grid2.jpg);
-    width: 300px;
+    background-image: url(bg-img12.jpg);
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
   }
   .grid3 {
-    background-image: url(grid3.jpg);
-    width: 300px;
+    background-image: url(bg-img22.jpg);
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   .grid4 {
-    background-image: url(grid4.jpg);
-    width: 300px;
+    background-image: url(bg-img32.png);
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   .grid5 {
-    background-image: url(grid5.jpg);
-    width: 300px;
+    background-image: url(bg-img42.jpg);
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   .grid6 {
-    background-image: url(grid6.jpg);
-    width: 300px;
+    background-image: url(bg-img52.jpg);
+    width: 100%;
     height: 490px;
     background-repeat: no-repeat;
     background-position: center;
@@ -810,3 +852,251 @@
   opacity: 1;
   gap: 12px;
 } */
+
+.container {
+  width: 500px;
+  height: 300px;
+
+  display: flex;
+  gap: 12px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.box {
+  min-width: 300px;
+  height: 300px;
+  background-image: url(anim1.jpg);
+  font-size: 50px;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.box:nth-child(2) {
+  background-image: url(anim2.jpg);
+}
+
+.box:nth-child(3) {
+  background-image: url(anim3.jpg);
+}
+
+.box:nth-child(4) {
+  background-image: url(anim4.jpg);
+}
+
+.box:nth-child(5) {
+  background-image: url(anim5.jpg);
+}
+.box:nth-child(6) {
+  background-image: url(anim6.jpg);
+}
+.box:nth-child(7) {
+  background-image: url(anim7.jpg);
+}
+.box:nth-child(8) {
+  background-image: url(anim8.jpg);
+}
+
+.indicator {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+a {
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+a.active {
+  background-color: red;
+}
+
+/* sdsdas */
+
+.containers {
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.containers::-webkit-scrollbar {
+  display: none;
+}
+
+.anim {
+  min-width: 500px;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-size: 24px;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: white;
+  font-weight: bold;
+  flex-shrink: 0;
+  border-radius: 12px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.anim::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  z-index: 1;
+}
+
+.anim-content {
+  position: relative;
+  z-index: 2;
+}
+
+.anim-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.anim-subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  font-weight: normal;
+}
+
+.anim:nth-child(1) {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 150, 136, 0.9),
+      rgba(0, 105, 92, 0.9)
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400"><rect fill="%23009688" width="500" height="400"/><text x="50%" y="50%" fill="white" font-size="60" text-anchor="middle" dominant-baseline="middle" font-family="Arial">R%26B Now</text></svg>');
+}
+
+.anim:nth-child(2) {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 121, 107, 0.9),
+      rgba(0, 77, 64, 0.9)
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400"><rect fill="%2300796B" width="500" height="400"/><text x="50%" y="50%" fill="white" font-size="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial">NBA 2K25</text></svg>');
+}
+
+.anim:nth-child(3) {
+  background: linear-gradient(
+      135deg,
+      rgba(156, 39, 176, 0.9),
+      rgba(123, 31, 162, 0.9)
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400"><rect fill="%239C27B0" width="500" height="400"/><text x="50%" y="50%" fill="white" font-size="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial">Fitness%2B</text></svg>');
+}
+
+.anim:nth-child(4) {
+  background: linear-gradient(
+      135deg,
+      rgba(233, 30, 99, 0.9),
+      rgba(194, 24, 91, 0.9)
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400"><rect fill="%23E91E63" width="500" height="400"/><text x="50%" y="50%" fill="white" font-size="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial">Apple TV%2B</text></svg>');
+}
+
+.anim:nth-child(5) {
+  background: linear-gradient(
+      135deg,
+      rgba(255, 152, 0, 0.9),
+      rgba(245, 124, 0, 0.9)
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400"><rect fill="%23FF9800" width="500" height="400"/><text x="50%" y="50%" fill="white" font-size="40" text-anchor="middle" dominant-baseline="middle" font-family="Arial">Apple Music</text></svg>');
+}
+
+.indicators {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dot.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 24px;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+button.active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
